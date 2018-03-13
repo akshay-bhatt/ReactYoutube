@@ -10,6 +10,7 @@ module.exports = {
       {
         exclude: /node_modules/,
         loader: "babel"
+//        loaders: ['react-hot', 'babel?presets[]=es2015&presets[]=react']
       }
     ]
   },
@@ -18,5 +19,8 @@ module.exports = {
   },
   devServer: {
     contentBase: "./"
+  },
+  query: {
+    presets: ['react']
   }
 };
